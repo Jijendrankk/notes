@@ -6,7 +6,9 @@ import {
     BtnRedo,
     Editor,
     EditorProvider,
-    Toolbar
+    Toolbar,
+    BtnUnderline,
+    BtnStrikeThrough,
   } from 'react-simple-wysiwyg';
 
 const CustomEditor = ({handleChange=()=>{}, content='',placeHolder='Take a note'}) => {
@@ -24,6 +26,8 @@ const CustomEditor = ({handleChange=()=>{}, content='',placeHolder='Take a note'
             <BtnRedo/>
             <BtnBold />
             <BtnItalic />
+            <BtnStrikeThrough/>
+            <BtnUnderline/>
           </Toolbar>
         </Editor>
       </EditorProvider>
